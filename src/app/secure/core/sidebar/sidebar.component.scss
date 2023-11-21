@@ -1,0 +1,111 @@
+.sidebar__background{
+  height: 100vh;
+  background: #1c1a26;
+  width: 140px;
+  border-radius: 20px;
+}
+.icon-static-store {
+  width: 70px;
+  height: 70px;
+  background-color: #543c3b;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.icon-static-exit {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  :hover{
+    cursor: pointer;
+    color: #ea7c69;
+  }
+}
+
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+}
+
+
+// .nav-item:active{
+//   background-image: url(../../../../assets/sidebar/Sidebar.png);
+//   height: 150px;
+//   width: 132px;
+//   left: 4px;
+//   position: relative;
+//   display: flex;
+
+//   justify-content: center;
+// }
+
+.teste {
+  background-image: url(../../../../assets/sidebar/Sidebar.png);
+  height: 150px;
+  width: 132px;
+  left: 4px;
+  position: relative;
+  display: flex;
+
+  justify-content: center;
+}
+
+.icon-background {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  // position: relative;
+  // left: 31px;
+  border-radius: 20px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 54px;
+}
+.icon-background:hover {
+  color: #ea7c69;
+}
+
+
+// .icon-background:active {
+//   width: 50px;
+//   height: 50px;
+//   position: relative;
+//   background-color: #ea7c69;
+//   border-radius: 20px;
+//   z-index: 100;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   top: 54px;
+// }
+
+.nav-item:active .icon-background {
+  color: white;
+  background-color: #ea7c69;
+}
+.active{
+  background-image: url(../../../../assets/sidebar/Sidebar.png);
+  height: 150px;
+  width: 132px;
+  left: 4px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    .icon-background{
+      color: white;
+      background-color: #ea7c69;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
