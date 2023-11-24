@@ -1,16 +1,16 @@
 <div class="container-fluid row">
-  <div class="col-8">
+  <div [ngClass]="listProductBudget.length > 0 ? 'col-8' : 'col-12'">
     <div class="pb-5 d-flex flex-column">
       <span class="title">Hallef Brendo</span>
       <span class="subtitle">Tuesday, 2 Feb 2021</span>
     </div>
     <app-navigation-filter [listNavigation]="listNavigation" (selected)="selectedNavigation($event)"></app-navigation-filter>
   </div>
-  <div class="mt-5 col-8">
+  <div class="mt-5" [ngClass]="listProductBudget.length > 0 ? 'col-8' : 'col-12'">
     <h1 style="margin-bottom: 100px; font-size: 34px;">Choose Dishes</h1>
     <app-product-card [listProduct]="listProduct" [selectNavigationCategory]="selectNavigationCategory"></app-product-card>
   </div>
-  <div class="col-4" style="bottom: 217px; position: relative;">
+  <div *ngIf="listProductBudget.length > 0" class="col-4" [ngClass]="listProductBudget.length > 0 ? 'slideInRight' :''" style="bottom: 217px; position: relative;">
     <app-orders></app-orders>
   </div>
 </div>

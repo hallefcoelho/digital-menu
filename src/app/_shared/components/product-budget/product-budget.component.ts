@@ -23,5 +23,8 @@ export class ProductBudgetComponent implements OnInit {
       }
     })
   }
+  deleteProductBudget(product: Product){
+    this.budgetDataService.deleteProductBudget(product)
+  }
 
 }

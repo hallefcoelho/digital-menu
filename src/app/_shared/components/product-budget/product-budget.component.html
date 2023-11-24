@@ -26,10 +26,13 @@
     </div>
     <div class="col-3">
       <div class="container-icon ms-3">
-        <button type="button" class="btn btn-outline-danger button-trash">
+        <button type="button" class="btn btn-outline-danger button-trash" (click)="deleteProductBudget(product)">
           <i class="fa-solid fa-trash fa-xl trash-icon"></i>
         </button>
       </div>
     </div>
   </div>
+</div>
+<div *ngIf="listProductFilter.length === 0">
+  <h2>teste</h2>
 </div>
