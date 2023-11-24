@@ -17,6 +17,7 @@ export class BudgetDataService {
 
   addProductBudget(product: ProductBudget): void {
     const index = this._productBudget.indexOf(product)
+    console.log(this.productBudget)
     if(index === -1){
       const amount = product.Amount ? product.Amount : 0;
       const enteredValue = product.EnteredValue ? product.EnteredValue : 0;
