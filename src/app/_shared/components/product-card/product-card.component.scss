@@ -1,0 +1,60 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.product-img {
+  width: 170px;
+  clip-path: circle(50% at 50% 50%);
+}
+.cards {
+  margin-bottom: 100px;
+  background-color: #1c1a26;
+  color: white;
+  border-radius: 30px;
+  width: 30%;
+  margin-right: 20px;
+}
+
+.to-spin-animation {
+  transition: transform 0.5s ease;
+}
+
+.to-spin-animation:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.input-amount {
+  height: 50px;
+  max-width: 50px;
+  background-color: #252836;
+  color: white;
+  font-size: 15px;
+  border-radius: 12px;
+  margin: auto;
+}

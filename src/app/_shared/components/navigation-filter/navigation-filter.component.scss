@@ -1,0 +1,20 @@
+.active {
+  color: #ea7c69;
+}
+
+.nav-list {
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+.nav-list:hover {
+  color: #ea7c69;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #3E4095;
+}
+.nav-link.active {
+  color: #ea7c69 !important;
+}

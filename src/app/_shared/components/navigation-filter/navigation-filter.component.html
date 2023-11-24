@@ -1,0 +1,5 @@
+<ul class="nav nav-underline d-flex justify-content-between pe-5">
+  <li class="nav-item" *ngFor="let item of listNavigation">
+    <span class="nav-link nav-list" style="cursor: pointer;" [ngClass]="item.Id === selectedNavigation?.Id ? 'active' : ''" (click)="getNavigationItem(item)">{{ item.Name }}</span>
+  </li>
+</ul>

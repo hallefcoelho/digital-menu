@@ -55,3 +55,39 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.title {
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  color: #E0E6E9;
+  font-style: italic;
+}
+
+
+// @media screen and (max-width: 767px) {
+//   /* Estilos para telas pequenas */
+// }
+
+// @media screen and (min-width: 768px) and (max-width: 991px) {
+//   /* Estilos para telas médias */
+// }
+
+// @media screen and (min-width: 992px) and (max-width: 1199px) {
+//   /* Estilos para telas grandes */
+// }
+
+// @media screen and (min-width: 1500px) {
+//   body {
+//     max-width: 1100px;
+//   }
+// }
+// @media screen and (min-width: 1920px) {
+//   body {
+//     max-width: 1920px;
+//   }
+// }

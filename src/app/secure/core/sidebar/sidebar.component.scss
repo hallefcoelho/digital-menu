@@ -34,29 +34,6 @@
   justify-content: center;
 }
 
-
-// .nav-item:active{
-//   background-image: url(../../../../assets/sidebar/Sidebar.png);
-//   height: 150px;
-//   width: 132px;
-//   left: 4px;
-//   position: relative;
-//   display: flex;
-
-//   justify-content: center;
-// }
-
-.teste {
-  background-image: url(../../../../assets/sidebar/Sidebar.png);
-  height: 150px;
-  width: 132px;
-  left: 4px;
-  position: relative;
-  display: flex;
-
-  justify-content: center;
-}
-
 .icon-background {
   cursor: pointer;
   width: 70px;
@@ -90,17 +67,18 @@
 
 .nav-item:active .icon-background {
   color: white;
-  background-color: #ea7c69;
+  // background-color: #ea7c69;
 }
 .active{
   background-image: url(../../../../assets/sidebar/Sidebar.png);
   height: 150px;
-  width: 132px;
-  left: 4px;
+  width: 150px;
+  left: 12px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 15px;
     .icon-background{
       color: white;
       background-color: #ea7c69;

@@ -1,0 +1,42 @@
+.container {
+  background-color: #1c1a26;
+  border-radius: 10px;
+  height: 100%;
+  max-width: 65vh;
+  padding: 25px;
+  position: fixed
+}
+.button {
+  margin-right: 10px;
+  color: #ea7c69;
+  background-color: #1C1A26;
+  font-weight: 600;
+}
+.button:hover {
+  border-color: #ea7c69;
+}
+
+.button-active {
+  color: white;
+  background-color: #ea7c69;
+}
+
+.card-product {
+  height: 500px;
+  overflow-y: scroll;
+
+}
+
+.card-product::-webkit-scrollbar {
+  width: 3px;
+  height: 3px; /* A altura só é vista quando a rolagem é horizontal */
+}
+
+.card-product::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+.card-product::-webkit-scrollbar-thumb {
+  background-color: #ea7c69;
+}
