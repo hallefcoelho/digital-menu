@@ -1,27 +1,27 @@
-<div class="container-fluid container-style shadow-lg p-3 mb-5" *ngFor="let product of listProductFilter">
+<div class="container container-style shadow-lg p-3 mb-5" *ngFor="let product of listProductFilter">
   <div class="row no-padding mb-3">
     <div class="col-7">
       <div class="d-flex">
         <img class="product-img me-3" src="{{product.Image}}" alt="">
         <div class="d-flex flex-column" style="width: 100%;">
           <p class="title-product" matTooltip="{{product.Description}}" matTooltipClass="mat-tooltip-color" TooltipPosition ="above">{{product.Description | slice: 0:18}}{{ product.Description!.length > 18 ? '...' : '' }}</p>
-          <p class="price-product">$ {{product.Sale}}</p>
+          <p class="price-product">$ {{product.Price}}</p>
         </div>
       </div>
     </div>
     <div class="col-2 col-width d-flex align-items-center" >
       <div class="input-group mb-3">
-        <input type="number" class="form-control text-center input-amount" aria-label="Username" aria-describedby="basic-addon1">
+        <input type="text" class="form-control text-center input-amount" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="product.Amount" mask="separator.2" mask="0*">
       </div>
     </div>
-    <div class="col-2 d-flex justify-content-center align-items-center" style="width: 85px;">
-      <p style="font-size: 20px;" >$ {{product.Sale * 3}}</p>
+    <div class="col-2 d-flex justify-content-center align-items-center style-price">
+      <p>{{product.Price * product.Amount | currency : 'BRL'}}</p>
     </div>
   </div>
   <div class="row">
     <div class="col-9">
       <div class="input-group mb-3" style="width: 102%;">
-        <input type="text" class="form-control input-description" placeholder="Order Note..." aria-label="Username" aria-describedby="basic-addon1">
+        <input type="text" class="form-control input-description" placeholder="Order Note..." aria-label="OrderNote" aria-describedby="basic-addon1" [(ngModel)]="product.OrderNote">
       </div>
     </div>
     <div class="col-3">
@@ -32,7 +32,4 @@
       </div>
     </div>
   </div>
-</div>
-<div *ngIf="listProductFilter.length === 0">
-  <h2>teste</h2>
 </div>

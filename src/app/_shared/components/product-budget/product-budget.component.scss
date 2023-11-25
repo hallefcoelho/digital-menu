@@ -51,6 +51,13 @@ input[type=number] {
   border-radius: 15px;
 }
 
+.style-price {
+  width: 90px;
+  p {
+    font-size: 14px;
+  }
+}
+
 
 @media screen and (min-width: 1900px) {
   .product-img {
@@ -71,7 +78,15 @@ input[type=number] {
   .price-product {
     font-size: 18px;
   }
+
   .col-width {
     width: 100px;
+  }
+
+  .style-price {
+    width: 120px;
+    p {
+      font-size: 20px;
+    }
   }
 }

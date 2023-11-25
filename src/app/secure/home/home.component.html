@@ -10,7 +10,7 @@
     <h1 style="margin-bottom: 100px; font-size: 34px;">Choose Dishes</h1>
     <app-product-card [listProduct]="listProduct" [selectNavigationCategory]="selectNavigationCategory"></app-product-card>
   </div>
-  <div *ngIf="listProductBudget.length > 0" class="col-4" [ngClass]="listProductBudget.length > 0 ? 'slideInRight' :''" style="bottom: 217px; position: relative;">
+  <div *ngIf="listProductBudget.length > 0" class="col-4" [ngClass]="listProductBudget.length > 0 ? 'slideInRight' :''" style="bottom: 217px; position: fixed; right: 0; top: 0;">
     <app-orders></app-orders>
   </div>
 </div>

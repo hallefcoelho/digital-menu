@@ -16,7 +16,7 @@ constructor() { }
         {
           Id: 1,
           Description: 'Spicy seasoned seafood noodles',
-          Sale: 2.29,
+          Price: 2.29,
           Availability: 20,
           Image: '../../../../assets/cards/Images12.png',
           Category: 'Hot Dishes'
@@ -24,7 +24,7 @@ constructor() { }
         {
           Id: 2,
           Description: 'Salted Pasta with mushroom sauce',
-          Sale: 2.69,
+          Price: 2.69,
           Availability: 11,
           Image: '../../../../assets/cards/Images42.png',
           Category: 'Hot Dishes'
@@ -32,7 +32,7 @@ constructor() { }
         {
           Id: 3,
           Description: 'Beef dumpling in hot and sour soup',
-          Sale: 2.99,
+          Price: 2.99,
           Availability: 16,
           Image: '../../../../assets/cards/Images13.png',
           Category: 'Hot Dishes'
@@ -40,7 +40,7 @@ constructor() { }
         {
           Id: 4,
           Description: 'Healthy noodle with spinach leaf',
-          Sale: 3.29,
+          Price: 3.49,
           Availability: 22,
           Image: '../../../../assets/cards/Images10.png',
           Category: 'Hot Dishes'
@@ -48,7 +48,7 @@ constructor() { }
         {
           Id: 5,
           Description: 'Hot spicy fried rice with omelet',
-          Sale: 3.49,
+          Price: 3.49,
           Availability: 13,
           Image: '../../../../assets/cards/Images.png',
           Category: 'Hot Dishes'
@@ -56,7 +56,7 @@ constructor() { }
         {
           Id: 6,
           Description: 'Spicy instant noodle with special omelette',
-          Sale: 3.59,
+          Price: 3.59,
           Availability: 17,
           Image: '../../../../assets/cards/Images9.png',
           Category: 'Hot Dishes'
@@ -64,7 +64,7 @@ constructor() { }
         {
           Id: 7,
           Description: 'Healthy noodle with spinach leaf',
-          Sale: 4.28,
+          Price: 4.28,
           Availability: 30,
           Image: '../../../../assets/cards/Images6.png',
           Category: 'Hot Dishes'
@@ -72,7 +72,7 @@ constructor() { }
         {
           Id: 8,
           Description: 'Salted Pasta with mushroom sauce',
-          Sale: 2.99,
+          Price: 2.99,
           Availability: 25,
           Image: '../../../../assets/cards/Images15.png',
           Category: 'Hot Dishes'
@@ -80,7 +80,7 @@ constructor() { }
         {
           Id: 9,
           Description: 'is simply dummy text of the printing.',
-          Sale: 3.59,
+          Price: 3.59,
           Availability: 20,
           Image: '../../../../assets/cards/prato-frio-1.png',
           Category: 'Cold Dishes'
@@ -88,7 +88,7 @@ constructor() { }
         {
           Id: 10,
           Description: 'but also the leap into electronic.',
-          Sale: 2.69,
+          Price: 2.69,
           Availability: 10,
           Image: '../../../../assets/cards/prato-frio-2.png',
           Category: 'Cold Dishes'
@@ -96,7 +96,7 @@ constructor() { }
         {
           Id: 11,
           Description: 'Lorem Ipsum is not simply random.',
-          Sale: 2.19,
+          Price: 2.19,
           Availability: 15,
           Image: '../../../../assets/cards/prato-frio-3.png',
           Category: 'Cold Dishes'

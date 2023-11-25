@@ -1,11 +1,12 @@
 export interface ProductBudget {
   Id: number,
   Description: string,
-  Sale: number,
+  Price: number,
   Availability: number,
   Image: string,
   Category: string,
   Amount: number,
   EnteredValue: number,
-  TotalValue: number
+  TotalValue: number,
+  OrderNote: string
 }

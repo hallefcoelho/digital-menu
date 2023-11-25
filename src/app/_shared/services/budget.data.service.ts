@@ -21,7 +21,9 @@ export class BudgetDataService {
     if (!isProductInBudget) {
       const amount = product.Amount || 0;
       const enteredValue = product.EnteredValue || 0;
+      const orderNote = product.OrderNote || '';
 
+      product.OrderNote = orderNote;
       product.Amount = amount;
       product.EnteredValue = enteredValue;
       product.TotalValue = amount * enteredValue;
