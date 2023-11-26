@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Product } from 'src/app/_shared/models/product.model';
-import { BudgetDataService } from 'src/app/_shared/services/budget.data.service';
+import { BudgetDataService } from 'src/app/secure/home/services/budget.data.service';
 
 @Component({
   selector: 'app-orders',

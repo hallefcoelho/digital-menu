@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, Component, DoCheck, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Product } from '../../../../_shared/models/product.model';
-import { BudgetDataService } from '../../../../_shared/services/budget.data.service';
+import { BudgetDataService } from '../../services/budget.data.service';
 import { ProductBudget } from '../../../../_shared/models/productBudget.model';
 import { FormBuilder, FormGroup } from '@angular/forms';
 

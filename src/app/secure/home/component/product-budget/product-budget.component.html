@@ -10,9 +10,9 @@
       </div>
     </div>
     <div class="col-2 col-width d-flex align-items-center" >
-      <div class="input-group mb-3">
+      <fieldset class="input-group mb-3">
         <input type="text" class="form-control text-center input-amount" aria-label="Username" aria-describedby="basic-addon1" (keydown)="setTotalValueBudget()" [(ngModel)]="product.Amount" mask="separator.2" mask="0*">
-      </div>
+      </fieldset>
     </div>
     <div class="col-2 d-flex justify-content-center align-items-center style-price">
       <p>{{product.Price * product.Amount | currency}}</p>
@@ -20,9 +20,9 @@
   </div>
   <div class="row">
     <div class="col-9">
-      <div class="input-group mb-3" style="width: 102%;">
+      <fieldset class="input-group mb-3" style="width: 102%;">
         <input type="text" class="form-control input-description" placeholder="Order Note..." aria-label="OrderNote" aria-describedby="basic-addon1" [(ngModel)]="product.OrderNote">
-      </div>
+      </fieldset>
     </div>
     <div class="col-3">
       <div class="container-icon ms-3">

@@ -1,5 +1,5 @@
 <div class="scene">
-  <div class="card">
+  <div class="card" [ngClass]="ccvSelected ? 'card-flip' : ''">
     <div class="card__face card__face--front">
       <!-- <img src="https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" /> -->
       <div class="credit-card">
@@ -10,12 +10,13 @@
         </div>
         <div class="container ms-3 me-3" style="width: 90%;">
           <h2 style="font-size: 16px; margin-bottom: -5px;">Card Number</h2>
-          <h2 style="font-size: 23px">1234 5678 1234 5678</h2>
-          <div class="d-flex">
-            <h2>Hallef B C Silva</h2>
-            <div class="d-flex flex-column ms-auto">
+          <h2 style="font-size: 23px; height: 20px;">{{numberCard}}</h2>
+          <div class="d-flex flex-column">
+            <h2 style="font-size: 16px; margin-bottom: -5px;">Cardholder Name</h2>
+            <h2 style="height: 20px;">{{nameCard}}</h2>
+            <div class="d-flex flex-column ms-auto" style="margin-top: -50px;">
               <p>Valid Thru</p>
-              <p style="font-size: 20px; margin-top: -13px;">28/05</p>
+              <p style="font-size: 20px; margin-top: -13px;">{{dateValidationCard}}</p>
             </div>
           </div>
         </div>
@@ -27,7 +28,7 @@
           <div style="height: 35px; width: 100%; background-color: black;"></div>
           <p style="font-size: 20px;" class="align-self-end pe-5 mt-3">ccv</p>
           <div class="d-flex justify-content-end align-items-center" style="height: 35px; width: 80%; background-color: white; border-radius: 5px; margin-top: -7px">
-            <span style="color: black; font-size: 30px;">000</span>
+            <span style="color: black; font-size: 30px;">{{ccvCard}}</span>
           </div>
         </div>
       </div>

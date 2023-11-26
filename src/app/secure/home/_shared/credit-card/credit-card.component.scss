@@ -8,9 +8,9 @@ body {
 }
 
 .scene {
-  width: 1000px;
+  // width: 1000px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   perspective: 800px;
 
   .card {
@@ -25,9 +25,9 @@ body {
     transition: 1s ease-in-out;
     transform-style: preserve-3d;
 
-    &:hover {
-      transform: rotateY(0.5turn);
-    }
+    // &:hover {
+    //   transform: rotateY(0.5turn);
+    // }
 
     .card__face {
       position: absolute;
@@ -51,6 +51,9 @@ body {
       }
     }
   }
+}
+.card-flip{
+  transform: rotateY(0.5turn);
 }
 
 .credit-card{

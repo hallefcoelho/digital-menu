@@ -1,7 +1,7 @@
 <div class="container">
   <i class="fa-solid fa-left-long fa-2xl mb-5 back-icon" (click)="closePayment()"></i>
-  <h1 class="title mb-4" style="font-weight: 500; font-size: 40px">Payment</h1>
-  <hr class="mb-4">
+  <h1 class="title mb-4" style="font-weight: 500; font-size: 40px" (click)="teste()">Payment</h1>
+  <hr class="mb-2">
   <h1 class="title">Payment Method</h1>
   <div class="d-flex justify-content-start mb-3">
     <button type="button" class="btn button" [ngClass]="button.Name === buttonSelected ? 'button-active' : ''" *ngFor="let button of buttons" (click)="getButton(button.Name)" style="height: 80px; width: 150px;">
@@ -10,7 +10,33 @@
       <i [ngClass]="button.Name === buttonSelected ? 'fa-solid fa-circle-check position' : ''"></i>
     </button>
   </div>
-  <div *ngIf="buttonSelected === 'Credit Card'">
-    <app-credit-card></app-credit-card>
+  <div class="d-flex flex-column justify-content-center" *ngIf="buttonSelected === 'Credit Card'">
+    <div class="mb-4">
+      <app-credit-card
+      [ccvSelected]="ccvSelected"
+      [nameCard]="formPayment.controls['nameCard'].value"
+      [numberCard]="formPayment.controls['numberCard'].value"
+      [ccvCard]="formPayment.controls['ccvCard'].value"
+      [dateValidationCard]="formPayment.controls['dateCard'].value"
+      ></app-credit-card>
+    </div>
+    <form class="row" [formGroup]="formPayment">
+      <div class="col-10">
+        <fieldset class="input-group mb-3">
+          <input type="text" class="form-control input-card" placeholder="Card Number..." aria-label="numberCard" aria-describedby="basic-addon1" formControlName="numberCard">
+        </fieldset>
+        <fieldset class="input-group mb-3">
+          <input type="text" class="form-control input-card" placeholder="Card Name..." aria-label="nameCard" aria-describedby="basic-addon1" formControlName="nameCard">
+        </fieldset>
+      </div>
+      <div class="col-2">
+        <fieldset class="input-group mb-3">
+          <input type="text" class="form-control input-card" placeholder="00/00" aria-label="dateCard" aria-describedby="basic-addon1" formControlName="dateCard">
+        </fieldset>
+        <fieldset class="input-group mb-3">
+          <input type="text" class="form-control input-card" placeholder="CCV" aria-label="ccvCard" aria-describedby="basic-addon1" (focus)="ccvSelect(true)" (blur)="ccvSelect(false)" formControlName="ccvCard">
+        </fieldset>
+      </div>
+    </form>
   </div>
 </div>

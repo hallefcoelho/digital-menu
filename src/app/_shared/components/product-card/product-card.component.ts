@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component, DoCheck, EventEmitter, Input, Output } from '@angular/core';
 import { Product } from '../../models/product.model';
 import { Navigation } from '../../models/navigation.model';
-import { BudgetDataService } from '../../services/budget.data.service';
+import { BudgetDataService } from '../../../secure/home/services/budget.data.service';
 import { ProductBudget } from '../../models/productBudget.model';
 
 @Component({

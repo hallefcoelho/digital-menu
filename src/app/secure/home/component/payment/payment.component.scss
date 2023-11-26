@@ -32,10 +32,17 @@
 
 .back-icon{
   cursor: pointer;
-  :hover {
-
-  }
 }
 .back-icon:hover {
   color: #ea7c69;
+}
+
+.input-card {
+  background-color: #252836;
+  color: white;
+  height: 50px;
+  border-radius: 12px;
+}
+.input-card::placeholder{
+  color: rgba(255, 255, 255, 0.426);
 }

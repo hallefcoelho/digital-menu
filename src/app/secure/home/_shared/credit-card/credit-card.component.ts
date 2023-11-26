@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-credit-card',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./credit-card.component.scss']
 })
 export class CreditCardComponent implements OnInit {
+
+  @Input() ccvSelected!: boolean;
+  @Input() nameCard!: string;
+  @Input() numberCard!: any;
+  @Input() ccvCard!: number;
+  @Input() dateValidationCard!: any;
 
   constructor() { }
 

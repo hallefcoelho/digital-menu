@@ -3,7 +3,7 @@ import { NavigationInterface } from 'src/app/_shared/interfaces/navigation.inter
 import { ProductInterface } from 'src/app/_shared/interfaces/product.interface';
 import { Navigation } from 'src/app/_shared/models/navigation.model';
 import { Product } from 'src/app/_shared/models/product.model';
-import { BudgetDataService } from 'src/app/_shared/services/budget.data.service';
+import { BudgetDataService } from 'src/app/secure/home/services/budget.data.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -57,5 +57,6 @@ export class HomeComponent implements OnInit {
 
   letsPayment(event: boolean){
     this.openPayment = event;
+    console.log(event)
   }
 }
