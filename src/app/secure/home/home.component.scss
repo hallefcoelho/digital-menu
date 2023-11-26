@@ -1,3 +1,15 @@
+.container {
+  background-color: rgba(0, 0, 0, 0.475);
+  height: 110vh;
+  bottom: 217px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.row.shadow > * {
+  padding-left: 0 !important;
+}
+
 .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;

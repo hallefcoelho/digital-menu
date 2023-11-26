@@ -5,17 +5,17 @@
         <img class="product-img me-3" src="{{product.Image}}" alt="">
         <div class="d-flex flex-column" style="width: 100%;">
           <p class="title-product" matTooltip="{{product.Description}}" matTooltipClass="mat-tooltip-color" TooltipPosition ="above">{{product.Description | slice: 0:18}}{{ product.Description!.length > 18 ? '...' : '' }}</p>
-          <p class="price-product">$ {{product.Price}}</p>
+          <p class="price-product">{{product.Price | currency}}</p>
         </div>
       </div>
     </div>
     <div class="col-2 col-width d-flex align-items-center" >
       <div class="input-group mb-3">
-        <input type="text" class="form-control text-center input-amount" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="product.Amount" mask="separator.2" mask="0*">
+        <input type="text" class="form-control text-center input-amount" aria-label="Username" aria-describedby="basic-addon1" (keydown)="setTotalValueBudget()" [(ngModel)]="product.Amount" mask="separator.2" mask="0*">
       </div>
     </div>
     <div class="col-2 d-flex justify-content-center align-items-center style-price">
-      <p>{{product.Price * product.Amount | currency : 'BRL'}}</p>
+      <p>{{product.Price * product.Amount | currency}}</p>
     </div>
   </div>
   <div class="row">

@@ -12,7 +12,6 @@ import { SecureRoutingModule } from './secure-routing.module';
     ReactiveFormsModule,
     SecureRoutingModule,
     SidebarModule
-
   ],
   declarations: [SecureComponent]
 })

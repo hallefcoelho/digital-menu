@@ -12,6 +12,10 @@ export class BudgetDataService {
   productBudget = new BehaviorSubject<ProductBudget[]>(this._productBudget);
   productBudget$ = this.productBudget.asObservable();
 
+  private _totalValueBudget: number = 0;
+  totalValueBudget = new BehaviorSubject<number>(this._totalValueBudget);
+  totalValueBudget$ = this.totalValueBudget.asObservable();
+
 
   constructor() { }
 
@@ -19,7 +23,7 @@ export class BudgetDataService {
     const isProductInBudget = this._productBudget.some(item => item.Id === product.Id);
 
     if (!isProductInBudget) {
-      const amount = product.Amount || 0;
+      const amount = product.Amount || 1;
       const enteredValue = product.EnteredValue || 0;
       const orderNote = product.OrderNote || '';
 
@@ -33,8 +37,14 @@ export class BudgetDataService {
     }
   }
 
-  deleteProductBudget(product: Product){
+  deleteProductBudget(product: Product | any){
     const productRemoved = this._productBudget.find(x => x.Id == product.Id);
+    console.log(productRemoved)
+    productRemoved!.OrderNote = '';
+    productRemoved!.Amount = 1;
+    productRemoved!.EnteredValue = product.EnteredValue;
+    productRemoved!.TotalValue = product.EnteredValue;
+
     if(productRemoved) {
         const index = this._productBudget.indexOf(productRemoved);
         this._productBudget.splice(index, 1);
@@ -45,5 +55,10 @@ export class BudgetDataService {
   setProductBudget(productBudget: ProductBudget[]): void {
     this._productBudget = productBudget;
     this.productBudget.next(this._productBudget);
+  }
+
+  setTotalValueBudget(totalValueBudget: number): void{
+    this._totalValueBudget = totalValueBudget;
+    this.totalValueBudget.next(this._totalValueBudget);
   }
 }

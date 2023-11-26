@@ -13,7 +13,8 @@ export class HomeComponent implements OnInit {
   listNavigation!: Navigation[];
   listProduct!: Product[];
   selectNavigationCategory!: Navigation;
-  listProductBudget: Product[] = []
+  listProductBudget: Product[] = [];
+  openPayment: boolean = false;
 
   constructor(
   private navigationInterface: NavigationInterface,
@@ -54,4 +55,7 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  letsPayment(event: boolean){
+    this.openPayment = event;
+  }
 }

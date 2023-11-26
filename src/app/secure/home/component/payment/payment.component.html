@@ -1,0 +1,16 @@
+<div class="container">
+  <i class="fa-solid fa-left-long fa-2xl mb-5 back-icon" (click)="closePayment()"></i>
+  <h1 class="title mb-4" style="font-weight: 500; font-size: 40px">Payment</h1>
+  <hr class="mb-4">
+  <h1 class="title">Payment Method</h1>
+  <div class="d-flex justify-content-start mb-3">
+    <button type="button" class="btn button" [ngClass]="button.Name === buttonSelected ? 'button-active' : ''" *ngFor="let button of buttons" (click)="getButton(button.Name)" style="height: 80px; width: 150px;">
+      <i class="mt-4 mb-3 {{button.Icon}}"></i>
+      <p>{{button.Name}}</p>
+      <i [ngClass]="button.Name === buttonSelected ? 'fa-solid fa-circle-check position' : ''"></i>
+    </button>
+  </div>
+  <div *ngIf="buttonSelected === 'Credit Card'">
+    <app-credit-card></app-credit-card>
+  </div>
+</div>

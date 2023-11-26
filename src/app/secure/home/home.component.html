@@ -11,6 +11,14 @@
     <app-product-card [listProduct]="listProduct" [selectNavigationCategory]="selectNavigationCategory"></app-product-card>
   </div>
   <div *ngIf="listProductBudget.length > 0" class="col-4" [ngClass]="listProductBudget.length > 0 ? 'slideInRight' :''" style="bottom: 217px; position: fixed; right: 0; top: 0;">
-    <app-orders></app-orders>
+    <app-orders (letsPayment)="letsPayment($event)"></app-orders>
+  </div>
+  <div *ngIf="openPayment" [ngClass]="openPayment ? 'slideInRight' : ''" class="col-12 container">
+    <div class="row shadow">
+      <div class="col-6"></div>
+      <div class="col-6">
+        <app-payment (letsPayment)="letsPayment($event)"></app-payment>
+      </div>
+    </div>
   </div>
 </div>

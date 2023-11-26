@@ -4,7 +4,7 @@
       <div class="card-body d-flex flex-column justify-content-center align-items-center">
         <img class="product-img to-spin-animation" src="{{product.Image}}" style="bottom: 95px; position: relative;" alt="">
         <h2 class="card-title text-center" style="margin-top: -58px;">{{product.Description}}</h2>
-        <h3 class="card-text text-center">$ {{ product.Price }}</h3>
+        <h3 class="card-text text-center">{{ product.Price | currency }}</h3>
         <h4 class="card-text text-center" style="color: #ABBBC2;">{{product.Availability}} Bowls avaliable</h4>
         <button type="button" class="btn btn-outline-success" style="width: 150px;" (click)="addProductBudget(product)">
           To Add

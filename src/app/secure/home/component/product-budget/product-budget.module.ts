@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductBudgetComponent } from './product-budget.component';
-import { MaterialModule } from '../material/material.module';
+import { MaterialModule } from '../../../../_shared/components/material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 

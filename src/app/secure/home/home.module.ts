@@ -6,9 +6,10 @@ import { NavigationFilterModule } from 'src/app/_shared/components/navigation-fi
 import { NavigationInterface } from 'src/app/_shared/interfaces/navigation.interface';
 import { NavigationService } from 'src/app/_shared/http-service/navigation.service';
 import { ProductCardModule } from 'src/app/_shared/components/product-card/product-card.module';
-import { OrdersModule } from './orders/orders.module';
+import { OrdersModule } from './component/orders/orders.module';
 import { ProductService } from 'src/app/_shared/http-service/product.service';
 import { ProductInterface } from 'src/app/_shared/interfaces/product.interface';
+import { PaymentModule } from './component/payment/payment.module';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { ProductInterface } from 'src/app/_shared/interfaces/product.interface';
     NavigationFilterModule,
     ProductCardModule,
     OrdersModule,
+    PaymentModule
   ],
   declarations: [HomeComponent],
   providers: [

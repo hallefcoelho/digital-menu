@@ -1,0 +1,41 @@
+.container {
+  background-color: #1c1a26;
+  border-radius: 10px;
+  height: 150%;
+  max-width: 50%;
+  padding: 25px;
+  position: fixed;
+}
+
+.button {
+  margin-right: 10px;
+  background-color: #1c1a2695;
+  color: rgb(106, 106, 106);
+  border-color: rgb(106, 106, 106);
+  font-weight: 600;
+}
+.button:hover {
+  border-color: white;
+  color: white;
+}
+
+.button-active {
+  border-color: white;
+  color: white;
+}
+.position {
+  position: relative;
+  left: 55px;
+  bottom: 76px;
+  color: #ea7c69;
+}
+
+.back-icon{
+  cursor: pointer;
+  :hover {
+
+  }
+}
+.back-icon:hover {
+  color: #ea7c69;
+}
