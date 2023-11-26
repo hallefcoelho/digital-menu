@@ -19,11 +19,9 @@ registerLocaleData(ptBr);
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    NgxMaskDirective,
-    NgxMaskPipe
+    BrowserAnimationsModule
   ],
-  providers: [provideNgxMask(),
+  providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
     { provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL' }, //
   ],
