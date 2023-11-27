@@ -13,6 +13,8 @@ input[type=number] {
 .product-img {
   width: 170px;
   clip-path: circle(50% at 50% 50%);
+  bottom: 95px;
+  position: relative;
 }
 .cards {
   margin-bottom: 100px;
@@ -57,4 +59,16 @@ input[type=number] {
   font-size: 15px;
   border-radius: 12px;
   margin: auto;
+}
+
+.position-title{
+  margin-top: -58px;
+}
+
+.color-text {
+  color: #ABBBC2;
+}
+
+.btn-width {
+  width: 150px;
 }

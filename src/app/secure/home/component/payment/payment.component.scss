@@ -46,3 +46,31 @@
 .input-card::placeholder{
   color: rgba(255, 255, 255, 0.426);
 }
+
+
+.button-confirm {
+  color: white;
+  background-color: #ea7c69;
+  border-color: #ea7c69;
+}
+
+.button-cancel {
+  color: #ea7c69;
+  border-color: #ea7c69;
+}
+
+.button-cancel:hover {
+  color: white;
+  background-color: #ea7c69;
+  border-color: #ea7c69;
+}
+
+.height-container-buttons-payment{
+  height: 10vh;
+}
+
+@media screen and (min-width: 1900px) {
+  .height-container-buttons-payment{
+    height: 30vh;
+  }
+}

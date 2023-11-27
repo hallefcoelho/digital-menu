@@ -8,6 +8,7 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import ptBr from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { ToastrModule } from 'ngx-toastr';
 
 registerLocaleData(ptBr);
 
@@ -19,7 +20,12 @@ registerLocaleData(ptBr);
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      // positionClass: 'toast-bottom-center',
+      closeButton: true,
+
+    })
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },

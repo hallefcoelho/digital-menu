@@ -1,5 +1,7 @@
 import { Component, DoCheck, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { BudgetDataService } from '../../services/budget.data.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-payment',
@@ -15,13 +17,20 @@ export class PaymentComponent implements OnInit {
     {Name:'Paypal', Icon: 'fa-brands fa-paypal fa-2xl'},
     {Name:'Cash', Icon: 'fa-solid fa-wallet fa-2xl'}
   ];
+
+  totalValueBudget!: number;
+
   formPayment!: FormGroup;
 
 
-  constructor(private fb: FormBuilder) { }
+  constructor(
+    private fb: FormBuilder,
+    private budgetDataService: BudgetDataService,
+    private toastr: ToastrService) { }
 
   ngOnInit() {
     this.createdFormPayment();
+    this.getTotalValueBudget();
   }
 
   createdFormPayment(){
@@ -44,9 +53,17 @@ export class PaymentComponent implements OnInit {
   ccvSelect(select: boolean){
     this.ccvSelected = select;
   }
-  teste(){
-    console.log(this.formPayment.controls['nameCard'].value)
 
+  getTotalValueBudget(){
+    this.budgetDataService.totalValueBudget$.subscribe({
+      next:(totalValueBudget)=> {
+        this.totalValueBudget = totalValueBudget;
+      }
+    })
+  }
+
+  confirmBudget(){
+    this.toastr.success('Budget confirmed successfully', 'Sucess');
   }
 
 }

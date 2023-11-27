@@ -57,6 +57,5 @@ export class HomeComponent implements OnInit {
 
   letsPayment(event: boolean){
     this.openPayment = event;
-    console.log(event)
   }
 }
