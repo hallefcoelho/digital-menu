@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="card me-4">
+    <h1 class="title ms-3 mt-3 mb-5">Order Report</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">
+            <p class="ms-2">Customer</p>
+          </th>
+          <th scope="col">Menu</th>
+          <th scope="col">Total Payment</th>
+          <th class="text-center" scope="col">Status</th>
+          <th scope="col">&nbsp;</th>
+        </tr>
+        <tr colspan="4" class="line"></tr>
+      </thead>
+      <tbody *ngFor="let order of orderReporList">
+        <tr>
+          <th class="d-flex align-items-center ms-2">
+            <img class="table__img me-3" [src]="order.Avatar" alt="">
+            <p class="table__paragraph mt-3">{{order.Customer}}</p>
+          </th>
+          <td>
+            <p class="table__paragraph">{{order.Menu}}</p>
+          </td>
+          <td>
+            <p class="table__paragraph">{{order.TotalPayment | currency}}</p>
+          </td>
+          <td>
+            <p class="table__status" [ngClass]="
+            {
+              'table__status--complete': order.Status.indexOf('Completed') !== -1,
+              'table__status--preparing': order.Status.indexOf('Preparing') !== -1,
+              'table__status--pending': order.Status.indexOf('Pending') !== -1,
+            }">
+              {{order.Status}}
+            </p>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

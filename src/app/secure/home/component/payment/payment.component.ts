@@ -2,6 +2,8 @@ import { Component, DoCheck, EventEmitter, Input, OnInit, Output } from '@angula
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { BudgetDataService } from '../../services/budget.data.service';
 import { ToastrService } from 'ngx-toastr';
+import { NgxSpinnerService } from "ngx-spinner";
+
 
 @Component({
   selector: 'app-payment',
@@ -14,8 +16,8 @@ export class PaymentComponent implements OnInit {
   buttonSelected: string = 'Credit Card';
   buttons = [
     {Name:'Credit Card', Icon: 'fa-solid fa-credit-card fa-2xl'},
-    {Name:'Paypal', Icon: 'fa-brands fa-paypal fa-2xl'},
-    {Name:'Cash', Icon: 'fa-solid fa-wallet fa-2xl'}
+    {Name:'Pix', Icon: 'fa-brands fa-pix fa-2xl'},
+    // {Name:'Cash', Icon: 'fa-solid fa-wallet fa-2xl'}
   ];
 
   totalValueBudget!: number;
@@ -26,7 +28,8 @@ export class PaymentComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private budgetDataService: BudgetDataService,
-    private toastr: ToastrService) { }
+    private toastr: ToastrService,
+    private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
     this.createdFormPayment();
@@ -63,7 +66,13 @@ export class PaymentComponent implements OnInit {
   }
 
   confirmBudget(){
-    this.toastr.success('Budget confirmed successfully', 'Sucess');
+    this.spinner.show();
+    setTimeout(() => {
+      this.toastr.success('Budget confirmed successfully', 'Sucess');
+      this.budgetDataService.setProductBudget([])
+      this.letsPayment.emit(false);
+      this.spinner.hide();
+    }, 2000);
   }
 
 }

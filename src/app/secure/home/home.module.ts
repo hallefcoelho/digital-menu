@@ -10,6 +10,7 @@ import { OrdersModule } from './component/orders/orders.module';
 import { ProductService } from 'src/app/_shared/http-service/product.service';
 import { ProductInterface } from 'src/app/_shared/interfaces/product.interface';
 import { PaymentModule } from './component/payment/payment.module';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { PaymentModule } from './component/payment/payment.module';
     NavigationFilterModule,
     ProductCardModule,
     OrdersModule,
-    PaymentModule
+    PaymentModule,
+    NgxSpinnerModule
   ],
   declarations: [HomeComponent],
   providers: [

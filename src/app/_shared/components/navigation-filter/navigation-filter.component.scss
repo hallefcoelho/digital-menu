@@ -1,5 +1,5 @@
 .active {
-  color: #ea7c69;
+  color: var(--primary-color);
 }
 
 .nav-list {
@@ -10,12 +10,12 @@
   color: white;
 }
 .nav-list:hover {
-  color: #ea7c69;
+  color: var(--primary-color);
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: #3E4095;
 }
 .nav-link.active {
-  color: #ea7c69 !important;
+  color: var(--primary-color) !important;
 }

@@ -1,7 +1,7 @@
 .container {
   background-color: #1c1a26;
   border-radius: 10px;
-  height: 150%;
+  height: 100vh;
   max-width: 50%;
   padding: 25px;
   position: fixed;
@@ -27,14 +27,14 @@
   position: relative;
   left: 55px;
   bottom: 76px;
-  color: #ea7c69;
+  color: var(--primary-color);
 }
 
 .back-icon{
   cursor: pointer;
 }
 .back-icon:hover {
-  color: #ea7c69;
+  color: var(--primary-color);
 }
 
 .input-card {
@@ -50,27 +50,62 @@
 
 .button-confirm {
   color: white;
-  background-color: #ea7c69;
-  border-color: #ea7c69;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .button-cancel {
-  color: #ea7c69;
-  border-color: #ea7c69;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .button-cancel:hover {
   color: white;
-  background-color: #ea7c69;
-  border-color: #ea7c69;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
-.height-container-buttons-payment{
-  height: 10vh;
+.width-img {
+  width: 200px;
+  height: 200px;
+  clip-path: inset(2px 0 1px 2px)
+}
+
+.height-container-buttons-payment-pix {
+  height: 24.2vh;
+}
+
+.height-container-buttons-payment-credit-card {
+  height: 3.3vh;
+}
+
+.total-value-pix {
+  margin-bottom: -149.9px;
+  font-size: 25px;
+}
+.total-value-credit-card {
+  font-size: 25px;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 1900px) {
-  .height-container-buttons-payment{
+  .height-container-buttons-payment-credit-card {
+    height: 19vh;
+  }
+  .height-container-buttons-payment-pix {
     height: 30vh;
+  }
+  .width-img {
+    width: 250px;
+    height: 250px;
+    clip-path: inset(2px 0 1px 2px)
+  }
+  .total-value-credit-card {
+    font-size: 35px;
+    margin-top: 70px;
+  }
+  .total-value-pix {
+    margin-bottom: -104px;
+    font-size: 35px;
   }
 }

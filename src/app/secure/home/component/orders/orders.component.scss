@@ -1,24 +1,24 @@
 .container {
   background-color: #1c1a26;
   border-radius: 10px;
-  height: 150%;
+  // height: 150%;
   max-width: 67vh;
   padding: 25px;
   position: fixed;
 }
 .button {
   margin-right: 10px;
-  color: #ea7c69;
+  color: var(--primary-color);
   background-color: #1C1A26;
   font-weight: 600;
 }
 .button:hover {
-  border-color: #ea7c69;
+  border-color: var(--primary-color);
 }
 
 .button-active {
   color: white;
-  background-color: #ea7c69;
+  background-color: var(--primary-color);
 }
 
 .card-product {
@@ -38,7 +38,7 @@
 }
 
 .card-product::-webkit-scrollbar-thumb {
-  background-color: #ea7c69;
+  background-color: var(--primary-color);
 }
 
 @media screen and (min-width: 1900px) {

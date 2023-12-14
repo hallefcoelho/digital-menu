@@ -1,20 +1,20 @@
 <div class="container-fluid row">
-  <div [ngClass]="listProductBudget.length > 0 ? 'col-8' : 'col-12'">
+  <div [ngClass]="listProductBudget.length ? 'col-8' : 'col-12'">
     <div class="pb-5 d-flex flex-column">
       <span class="title">Hallef Brendo</span>
       <span class="subtitle">Tuesday, 2 Feb 2021</span>
     </div>
     <app-navigation-filter [listNavigation]="listNavigation" (selected)="selectedNavigation($event)"></app-navigation-filter>
   </div>
-  <div class="mt-5" [ngClass]="listProductBudget.length > 0 ? 'col-8' : 'col-12'">
+  <div class="mt-5" [ngClass]="listProductBudget.length ? 'col-8' : 'col-12'">
     <h1 style="margin-bottom: 100px; font-size: 34px;">Choose Dishes</h1>
     <app-product-card [listProduct]="listProduct" [selectNavigationCategory]="selectNavigationCategory"></app-product-card>
   </div>
-  <div *ngIf="listProductBudget.length > 0" class="col-4" [ngClass]="listProductBudget.length > 0 ? 'slideInRight' :''" style="bottom: 217px; position: fixed; right: 0; top: 0;">
+  <div *ngIf="listProductBudget.length" class="col-4" [ngClass]="listProductBudget.length ? 'slideInRight' :''" style="bottom: 217px; position: fixed; right: 0; top: 0;">
     <app-orders (letsPayment)="letsPayment($event)"></app-orders>
   </div>
-  <div *ngIf="openPayment" [ngClass]="openPayment ? 'slideInRight' : ''" class="col-12 container">
-    <div class="row shadow">
+  <div *ngIf="openPayment" class="col-12 container">
+    <div class="row shadow" [ngClass]="openPayment ? 'slideInRight' : ''">
       <div class="col-6"></div>
       <div class="col-6">
         <app-payment (letsPayment)="letsPayment($event)"></app-payment>
@@ -22,3 +22,4 @@
     </div>
   </div>
 </div>
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "large" type = "square-jelly-box" [fullScreen] = "true"><p style="color: var(--primary-color);"> Loading... </p></ngx-spinner>

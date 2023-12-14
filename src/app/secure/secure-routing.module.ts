@@ -7,21 +7,25 @@ const routes: Routes = [
     path: '',
     component: SecureComponent,
     children: [
-        {
-          path: '',
-          redirectTo: 'home',
-          pathMatch: 'full'
-        },
-        {
-            path: 'home',
-            loadChildren: () => import('./home/home.module').then((m) => m.HomeModule)
-        },
-        {
-            path: 'dashboard',
-            loadChildren: () => import('./dashboard/dashboard.module').then((m) => m.DashboardModule)
-        }
+      {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+      },
+      {
+          path: 'home',
+          loadChildren: () => import('./home/home.module').then((m) => m.HomeModule)
+      },
+      {
+          path: 'dashboard',
+          loadChildren: () => import('./dashboard/dashboard.module').then((m) => m.DashboardModule)
+      },
+      {
+        path: 'settings',
+        loadChildren: () => import('./settings/settings.module').then((m) => m.SettingsModule)
+      }
     ]
-   },
+  },
 ];
 @NgModule({
   imports: [

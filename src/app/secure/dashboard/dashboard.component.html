@@ -1,3 +1,21 @@
-<div class="container-fluid">
-  <p><i class="fa-solid fa-coffee" style="color: white;"></i> Aqui vai o Dashboard</p>
+<div class="container-fluid row">
+  <div class="col-9">
+    <div class="pb-5 d-flex flex-column">
+      <span class="title">Dashboard</span>
+      <span class="subtitle">Tuesday, 2 Feb 2021</span>
+    </div>
+  </div>
+  <div class="mt-2 col-9">
+    <app-total-cards></app-total-cards>
+  </div>
+  <div class="mt-4 col-9">
+    <app-order-report></app-order-report>
+  </div>
+  <div class="col-3" style="bottom: 217px; position: fixed; right: 0; top: 20px;">
+    <app-most-ordered></app-most-ordered>
+    <app-dash-order-type></app-dash-order-type>
+  </div>
 </div>
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "large" type = "square-jelly-box" [fullScreen] = "true">
+  <p style="color: var(--primary-color);"> Loading... </p>
+</ngx-spinner>

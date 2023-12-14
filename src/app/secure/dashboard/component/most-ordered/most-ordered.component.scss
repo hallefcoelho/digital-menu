@@ -1,0 +1,34 @@
+.container {
+  background-color: #1c1a26;
+  color: white;
+  border-radius: 20px;
+  height: 70%;
+}
+.card__product {
+  overflow: auto;
+}
+
+.card__product::-webkit-scrollbar {
+  width: 3px;
+  height: 3px; /* A altura só é vista quando a rolagem é horizontal */
+}
+
+.card__product::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+.card__product::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+.droplist{
+  background-color: #1c1a26;
+  color: white;
+  border-radius: 10px;
+  height: 60px;
+  width: 110px;
+  border-color: #abbbc25e;
+  padding-left: 5px;
+  font-size: 16px;
+}

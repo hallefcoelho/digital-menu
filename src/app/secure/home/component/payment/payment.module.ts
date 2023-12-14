@@ -5,6 +5,7 @@ import { CreditCardModule } from '../../_shared/credit-card/credit-card.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { CustomPipesModule } from 'src/app/_shared/custom-pipes/custom-pipes.module';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { CustomPipesModule } from 'src/app/_shared/custom-pipes/custom-pipes.mod
     ReactiveFormsModule,
     NgxMaskDirective,
     NgxMaskPipe,
-    CustomPipesModule
+    CustomPipesModule,
+    NgxSpinnerModule
   ],
   declarations: [PaymentComponent],
   exports: [PaymentComponent],

@@ -1,0 +1,109 @@
+.card {
+ background-color: #1c1a26;
+ border-radius: 20px;
+ height: 180px;
+ width: 280px;
+ color: white;
+}
+.card__icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background-color: #252836;
+}
+.card__icon--dollar > i {
+  margin: auto;
+}
+
+.card__icon--dollar--circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  border: #9288E0 solid 3px;
+}
+
+.card__percentage--up {
+  font-size: 20px;
+}
+
+.card__percentage--up > p {
+  color: #50D1AA;
+  padding-top: 15px;
+}
+
+.card__percentage--down {
+  font-size: 20px;
+}
+.card__percentage--down > p {
+  color: #FF7CA3;
+  padding-top: 15px;
+}
+.card__arrow--up {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  background-color: #50d1aa38;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card__arrow--down {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  background-color: #FF7CA338;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card__value--dollar {
+  font-size: 30px;
+}
+
+.card__paragraph {
+  font-size: 20px;
+  color: #ABBBC2;
+}
+
+.card__icon--bookmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}
+
+.card__percentage--bookmark > p {
+  color: #50D1AA;
+  padding-top: 15px;
+}
+
+.card__value--bookmark {
+  font-size: 30px;
+}
+
+.card__icon--users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}
+.fa-arrow-down {
+  color: #FF7CA3;;
+}
+.fa-arrow-up {
+  color: #50D1AA;;
+}
+
+
+@media screen and (min-width: 1900px) {
+  .card {
+    height: 200px;
+    width: 350px;
+
+   }
+}

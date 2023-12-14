@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
 import { NavigationInterface } from 'src/app/_shared/interfaces/navigation.interface';
 import { ProductInterface } from 'src/app/_shared/interfaces/product.interface';
 import { Navigation } from 'src/app/_shared/models/navigation.model';
@@ -20,6 +21,7 @@ export class HomeComponent implements OnInit {
   private navigationInterface: NavigationInterface,
   private productInterface: ProductInterface,
   private budgetDataService: BudgetDataService,
+  private spinner: NgxSpinnerService
   ) { }
 
   ngOnInit() {
@@ -37,8 +39,8 @@ export class HomeComponent implements OnInit {
 
   getDataProduct() {
     this.productInterface.getProduct().subscribe({
-      next:(product)=> {
-        this.listProduct = product;
+      next:(products)=> {
+        this.listProduct = products;
       }
     })
   }
