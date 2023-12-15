@@ -14,7 +14,7 @@ export class OrderReportComponent implements OnInit {
       Menu: 'Spicy seasoned seafood noodles',
       TotalPayment: 125,
       Status: 'Completed',
-      Avatar: '../../../../../assets/avatar/img1.png'
+      Avatar: './assets/avatar/img1.png'
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export class OrderReportComponent implements OnInit {
       Menu: 'Salted Pasta with mushroom sauce',
       TotalPayment: 145,
       Status: 'Preparing',
-      Avatar: '../../../../../assets/avatar/img2.png'
+      Avatar: './assets/avatar/img2.png'
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ export class OrderReportComponent implements OnInit {
       Menu: 'Beef dumpling in hot and sour soup',
       TotalPayment: 105,
       Status: 'Pending',
-      Avatar: '../../../../../assets/avatar/img3.png'
+      Avatar: './assets/avatar/img3.png'
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ export class OrderReportComponent implements OnInit {
       Menu: 'Hot spicy fried rice with omelet',
       TotalPayment: 45,
       Status: 'Completed',
-      Avatar: '../../../../../assets/avatar/img4.png'
+      Avatar: './assets/avatar/img4.png'
     },
     {
       id: 5,
@@ -46,7 +46,7 @@ export class OrderReportComponent implements OnInit {
       Menu: 'Hot spicy fried rice with omelet',
       TotalPayment: 245,
       Status: 'Completed',
-      Avatar: '../../../../../assets/avatar/img5.png'
+      Avatar: './assets/avatar/img5.png'
     },
     {
       id: 6,
@@ -54,7 +54,7 @@ export class OrderReportComponent implements OnInit {
       Menu: 'Hot spicy fried rice with omelet',
       TotalPayment: 435,
       Status: 'Completed',
-      Avatar: '../../../../../assets/avatar/img6.png'
+      Avatar: './assets/avatar/img6.png'
     },
   ]
   constructor() { }
