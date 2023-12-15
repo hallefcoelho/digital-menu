@@ -5,7 +5,7 @@
   <a href="#-tarefas">Tarefas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-alertas-e-observações">Alertas e observações</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-referência">Referencias</a>
+  <a href="#-referência">Referências</a>
 </p>
 
 
