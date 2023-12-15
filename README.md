@@ -31,7 +31,7 @@ Ao adotar o SOLID como alicerce conceitual, busco fortalecer a coesão e reduzir
 
 A integração do conceito whitelabel neste contexto amplia nossa visão para além do código, permitindo a personalização e rebranding do produto de acordo com as necessidades específicas do cliente. O comprometimento em criar uma solução que não apenas atenda aos requisitos técnicos, mas que também seja altamente adaptável e customizável, proporcionando uma experiência única para cada usuário final.
 
-Tarefas: 
+# 📝 Tarefas: 
 ### Login
 - [ ] Tela Login
 
