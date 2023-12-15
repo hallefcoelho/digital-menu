@@ -5,7 +5,7 @@
   <a href="#-tarefas">Tarefas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-alertas-e-observações">Alertas e observações</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-referencias">Referencias</a>
+  <a href="#-referência">Referencias</a>
 </p>
 
 
@@ -32,7 +32,7 @@ Ao adotar o SOLID como alicerce conceitual, busco fortalecer a coesão e reduzir
 
 A integração do conceito whitelabel neste contexto amplia nossa visão para além do código, permitindo a personalização e rebranding do produto de acordo com as necessidades específicas do cliente. O comprometimento em criar uma solução que não apenas atenda aos requisitos técnicos, mas que também seja altamente adaptável e customizável, proporcionando uma experiência única para cada usuário final.
 
-# 📝 Tarefas:
+## 📝 Tarefas:
 
 ### Login
 - [ ] Tela Login
@@ -138,7 +138,7 @@ Com esse recurso o usuário pode selecionar quantas tarefas ele deseja exibir na
 </details>
 --->
 
-# Referência
+## Referência
 - <a href="https://www.figma.com/file/t2P5tENo0VqaQZJ3tTN2Re/Food-POS-Dark---Tablet-Device-(Community)?type=design&node-id=248-3442&mode=design&t=BrsUwzYOwvNjbDii-0">UI Layout</a>
 - <a href="https://www.figma.com/file/VLJpcSbXguYWFFMnQqy2Z3/3D-Web3-Avatars-(Community)?type=design&node-id=0-1&mode=design&t=Ik4gYUa2nfSP9v54-0">Avatar</a>
 
