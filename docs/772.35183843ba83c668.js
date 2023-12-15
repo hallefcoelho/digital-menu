@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdigital_menu=self.webpackChunkdigital_menu||[]).push([[772],{2772:(c,n,t)=>{t.r(n),t.d(n,{PublicModule:()=>i});var a=t(6814),s=t(5879);let i=(()=>{class u{static#t=this.\u0275fac=function(l){return new(l||u)};static#u=this.\u0275mod=s.oAB({type:u});static#n=this.\u0275inj=s.cJS({imports:[a.ez]})}return u})()}}]);

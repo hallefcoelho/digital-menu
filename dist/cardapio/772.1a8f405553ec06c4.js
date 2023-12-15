@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcardapio=self.webpackChunkcardapio||[]).push([[772],{2772:(i,c,t)=>{t.r(c),t.d(c,{PublicModule:()=>n});var u=t(6814),s=t(5879);let n=(()=>{class a{static#t=this.\u0275fac=function(o){return new(o||a)};static#a=this.\u0275mod=s.oAB({type:a});static#c=this.\u0275inj=s.cJS({imports:[u.ez]})}return a})()}}]);
