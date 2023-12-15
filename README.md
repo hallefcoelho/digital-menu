@@ -135,3 +135,10 @@ Com esse recurso o usuário pode selecionar quantas tarefas ele deseja exibir na
 </p>
 </details>
 --->
+
+# Referência
+- <a href="https://www.figma.com/file/t2P5tENo0VqaQZJ3tTN2Re/Food-POS-Dark---Tablet-Device-(Community)?type=design&node-id=248-3442&mode=design&t=BrsUwzYOwvNjbDii-0">UI Layout</a>
+- <a href="https://www.figma.com/file/VLJpcSbXguYWFFMnQqy2Z3/3D-Web3-Avatars-(Community)?type=design&node-id=0-1&mode=design&t=Ik4gYUa2nfSP9v54-0">Avatar</a>
+
+
+
