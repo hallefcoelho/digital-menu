@@ -19,9 +19,9 @@
 
 ## 💻 Projeto
 
-<!----
-<a href=www.teste.com.br">Clique para acessar o projeto</a>
------>
+
+<a href="https://hallefcoelho.github.io/digital-menu/#/secure/home">Clique para acessar o projeto</a>
+
 
 
 O projeto foi proposto como uma iniciativa inovadora para aprofundar o entendimento e aplicação dos princípios SOLID no desenvolvimento de software, utilizando a abordagem whitelabel como peça central. 
